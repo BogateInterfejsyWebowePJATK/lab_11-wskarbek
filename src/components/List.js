@@ -1,7 +1,8 @@
 import React from "react";
 import ListNumber from "./ListNumber";
+import ListPhoto from "./ListPhoto";
 
-export default function Table({objs}){
+export default function List({objs, type}){
 
     const [newObjs, setNewObjs] = React.useState(objs);
 
@@ -19,12 +20,21 @@ export default function Table({objs}){
         <div className="List">
             <ul>
                 {newObjs.map((obj, key) => {
-                    return (
-                        <li key={key}>
-                            <button onClick={() => del(key)}>Delete</button>
-                            <ListNumber number={obj}/>
-                        </li>
-                    )
+                    if (type === "numbers") {
+                        return (
+                            <li key={key}>
+                                <button onClick={() => del(key)}>Delete</button>
+                                <ListNumber number={obj}/>
+                            </li>
+                        )
+                    } else if (type === "photos") {
+                        return (
+                            <li key={key}>
+                                <button onClick={() => del(key)}>Delete</button>
+                                <ListPhoto photo={obj.photo} title={obj.title} date={obj.date}/>
+                            </li>
+                        )
+                    }
                 })}
             </ul>
         </div>

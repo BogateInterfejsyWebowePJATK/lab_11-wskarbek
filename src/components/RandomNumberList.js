@@ -25,7 +25,7 @@ export default function RandomNumberList({size, min, max}) {
     if(!table) {
         return (
             <div className="RandomNumberList">
-                <List objs={randomNumbersList}/>
+                <List objs={randomNumbersList} type="numbers"/>
                 <button onClick={generateRandomNumbers}>Wczytaj nowe liczby</button>
                 <button onClick={() => setTable(true)}>Wyświetl jako tablica</button>
             </div>

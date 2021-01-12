@@ -1,0 +1,17 @@
+{
+  "airedale terrier": {
+    "photo": "https://psy-pies.com/pliki/image/artykuly/201403/artgal/4152b12f8ecd1bcf3b4624ad7e36ce1a.jpg",
+    "title": "Airedale Terrier",
+    "date": "2012-03-19"
+  },
+  "akita inu": {
+    "photo": "https://psy-pies.com/pliki/image/artykuly/201403/artgal/a7790d62cc5ed847d552894e4d084465.jpg",
+    "title": "Akita Inu",
+    "date": "2013-04-13"
+  },
+  "basenji": {
+    "photos": "https://psy-pies.com/pliki/image/artykuly/201403/artgal/cf7d6751fa2a9bd26ab6c00bcaff9fe2.jpg",
+    "title": "Basenji",
+    "date": "2020-04-12"
+  }
+}
